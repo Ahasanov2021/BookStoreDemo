@@ -33,4 +33,8 @@ public class Book {
 
     Integer stock;
 
+    Double price;
+
+
+
 }

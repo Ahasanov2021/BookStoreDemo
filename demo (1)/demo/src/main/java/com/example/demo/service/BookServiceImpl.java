@@ -44,6 +44,8 @@ public class BookServiceImpl implements BookService {
             entity.setAuthorName(book.getAuthorName());
         if(book.getPublishDate() != null)
             entity.setPublishDate(book.getPublishDate());
+        if(book.getPrice() != null)
+            entity.setPrice(book.getPrice());
         entity = bookRepository.save(entity);
         return entity;
     }
